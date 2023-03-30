@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Lato:ital@1&family=Lexend&family=Lobster+Two:ital@1&display=swap');
+
+a {
+  text-decoration: none;
+}
+
+body {
+    background-color: #444;
+    color: white;
+}
+  
+header {
+    font-family: 'Lexend', sans-serif;
+}
+
+nav {
+  width: 15%;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 2px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+main {
+  width: 83%;
+  margin: 3px;
+  float: right;
+}
+
+section {
+  border: 2px solid;
+  border-radius: 10px;
+}
+  
+h1 {
+  margin-left: 10px;
+  font-family: 'Lobster Two', cursive;
+}
+  
+p {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    margin: 10px;
+}
+
+pre {
+  font-family: 'Baloo 2', cursive;
+}
+
+ul {
+  font-family: 'Baloo 2', cursive;
+}
+
+#collapsibles {
+  border-radius: 25px;
+}
+
+details {
+  border-radius: 15px;
+  user-select: none;
+}
+
+details summary span.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
+details[open] summary span.icon {
+  transform: rotate(-180deg);
+}
+
+summary {
+  background-color: #555;
+  margin: 2px;
+  display: flex;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary p {
+  height: fit-content;
+}
+
+.logo {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  right: 20px;
+  bottom: 5px;
+  float: right;
+}
+
+.navbtn {
+    background-color: #04AA5A;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    bottom: 0px;
+    border-radius: 5px;
+}
+  
+footer {
+    width: 100%;
+    background-color: #444;
+    font-family: lobster;
+    position: absolute;
+    bottom: 0;
+    border-radius: 3px;
+}
